@@ -1,5 +1,5 @@
 # Synopsis
-Start onthespot, optionally deleting playlists or everything in the cache.
+Start onthespot, optionally hiding log console and deleting playlists or everything in the cache.
 
 # Description
 Workaround for BUG: https://github.com/casualsnek/onthespot/issues/120
