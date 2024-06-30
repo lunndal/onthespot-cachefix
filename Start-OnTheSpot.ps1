@@ -40,8 +40,10 @@ param (
     [switch]$HideConsole = $false
 )
 
+# Make executable run from here.
 $runDir = Split-Path -Parent $Executable
 
+# Delete any cache requested.
 switch ($DeleteCache) {
     "All" { 
         Remove-Item -Path "${Cache}\*" -Force
@@ -51,13 +53,16 @@ switch ($DeleteCache) {
     }
 }
 
+# Prepare arguments.
 $arguments = @{
     FilePath = $Executable
     WorkingDirectory = $runDir
 }
 
+# Add argument to hide log console if requested.
 if ( $HideConsole ) {
     $arguments["WindowStyle"] = "Hidden"
 }
 
+# Start the application.
 Start-Process @arguments
