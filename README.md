@@ -1,10 +1,10 @@
-# SYNOPSIS
+# Synopsis
 Start onthespot, optionally deleting playlists or everything in the cache.
 
-# DESCRIPTION
+# Description
 Workaround for BUG: https://github.com/casualsnek/onthespot/issues/120
 
-# SYNTAX
+# Syntax
 ```
 .\Start-OnTheSpot.ps1
     -DeleteCahce    What parts of the cache to delete before starting onthespot.
@@ -16,7 +16,7 @@ Workaround for BUG: https://github.com/casualsnek/onthespot/issues/120
     -Cache          Path to the reqcache directory.
 ```
 
-# EXAMPLE
+# Example
 ```
 .\Start-OnTheSpot.ps1 `
     -HideConsole `
@@ -25,6 +25,6 @@ Workaround for BUG: https://github.com/casualsnek/onthespot/issues/120
     -Cache "C:\Users\USERNAME\.cache\casualOnTheSpot\reqcache"
 ```
 
-# RELATED LINKS
+# Related links
 * https://github.com/casualsnek/onthespot
 * https://github.com/casualsnek/onthespot/issues/120
