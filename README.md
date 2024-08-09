@@ -5,6 +5,7 @@ Start onthespot, optionally hiding log console and deleting playlists or everyth
 Workaround for BUG: https://github.com/casualsnek/onthespot/issues/120
 
 # Syntax
+All arguments are optional. 
 ```
 .\Start-OnTheSpot.ps1
     -DeleteCahce    What parts of the cache to delete before starting onthespot.
